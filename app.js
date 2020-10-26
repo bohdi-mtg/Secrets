@@ -14,6 +14,8 @@ app.use(express.static('public'));
 
 mongoose.connect('mongodb://localhost:27017/userDB', {useNewUrlParser: true, useUnifiedTopology: true });
 
+//Encrytion section --------------------
+
 const userSchema = new mongoose.Schema({
   email: String,
   password: String
